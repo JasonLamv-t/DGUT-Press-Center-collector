@@ -1,0 +1,8 @@
+stages:
+- stage:
+  - job:
+      steps:
+      - taskType: dockerRun@latest
+        inputs:
+          image: python
+          cmd: "python your-daemon-or-script.py"
